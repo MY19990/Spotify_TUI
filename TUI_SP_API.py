@@ -8,10 +8,10 @@ import logging
 logging.basicConfig(filename='spotify_player.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # SpotipyのOAuthクライアント
-sp_oauth = SpotifyOAuth(client_id="19088d0df1a0425ca1d0d1118a2554d0",
-                        client_secret="e735cdb40c2b490db3eefd32d14346d3",
-                        redirect_uri="http://localhost:8888/callback",
-                        scope="user-library-read user-read-playback-state user-modify-playback-state")
+sp_oauth = SpotifyOAuth(client_id="xxxx",
+                        client_secret="xxxx",
+                        redirect_uri="xxxx",
+                        scope="xxxx")
 
 def get_spotify_token():
     token_info = sp_oauth.get_cached_token()
